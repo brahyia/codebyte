@@ -1,0 +1,22 @@
+.navbar{
+    .container{
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            img{
+                width: 100px;
+            }
+        }
+        
+    }
+}
+.link{
+    text-decoration: none;
+    color:inherit
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
