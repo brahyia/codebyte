@@ -1,30 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from "../Navbar/brest.png"
-import getAllRecords from "."
+import Logo from "../Navbar/favicon.ico"
+
+
 // https://czi-covid-lypkrzry4q-uc.a.run.app/api/exams
 
 
-const Navbar = async  () => {
-  const fetchExam = async () => {
-    const res = await fetch(`https://czi-covid-lypkrzry4q-uc.a.run.app/api/exams`).then(res => res.json()
-  },
-  console.log(res)
-  cona
-
-  React.useEffect(() => {
-    console.log("test")
-    )
-  })
+const Navbar = () => {
+  
   return (
     <div className='navbar'>
       <div className='container'>
         <div className='logo'>
-          <img src={Logo} alt=''></img>
+        <img src={Logo} alt=''></img>
         </div>
         <div className='links'>
-          <Link className='link' to={'/?cat=art'}>
-          <h5>Resources</h5>
+          <Link className='link' to={'/?cat=exam'}>
+          <h5>Exam</h5>
           </Link>
           <Link className='link' to={'/?cat=about'}>
           <h5>About Breast Cancer</h5>
