@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-const detailed = () => {
+const Detail = () => {
   return (
     <div>detailed</div>
   )
 }
 
-export default detailed
+export default Detail

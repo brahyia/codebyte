@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from "../Navbar/favicon.ico"
+import Logo from "../Navbar/Logo192.png"
+import Search from "@mui/icons-material/Search";
+import Language from "@mui/icons-material/Language";
 
 
 // https://czi-covid-lypkrzry4q-uc.a.run.app/api/exams
@@ -14,19 +16,28 @@ const Navbar = () => {
         <div className='logo'>
         <img src={Logo} alt=''></img>
         </div>
+        
         <div className='links'>
           <Link className='link' to={'/?cat=exam'}>
           <h5>Exam</h5>
           </Link>
-          <Link className='link' to={'/?cat=about'}>
-          <h5>About Breast Cancer</h5>
+          <Link className='link' to={'/?cat=admin'}>
+          <h5>Admin</h5>
           </Link>
-          <Link className='link' to={'/?cat=findSupport'}>
-          <h5>Find Support Near You</h5>
+          
+          <span className='search'>
+          <Search/>
+          <input type={"text"} placeholder="Search"></input>
+          </span>
+          <span>
+            <Language className='icon'/> English
+            </span>
+            <span><Link to="./Login">Logout
           </Link>
+          </span>
+          
+          
 
-          <span>username</span>
-          <span>Logout</span>
   
         </div>
       </div>
