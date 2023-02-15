@@ -6,7 +6,7 @@ import {
 
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
-import Index from "./Pages/Index/Index";
+import Index from "./Pages/Index/index";
 import Admin from "./Pages/Admin/Admin";
 import Detail from "./Pages/Detail/Detail";
 import Navbar from "./components/Navbar/Navbar";
