@@ -5,10 +5,13 @@ import Search from "@mui/icons-material/Search";
 import Language from "@mui/icons-material/Language";
 
 
-// https://czi-covid-lypkrzry4q-uc.a.run.app/api/exams
+// https://czi-covid-lypkrzry4q-uc.a.run.app/api/exams ....API Endpoint!
 
 
 const Navbar = () => {
+
+
+  
   
   return (
     <div className='navbar'>
@@ -16,7 +19,10 @@ const Navbar = () => {
         <div className='logo'>
         <img src={Logo} alt=''></img>
         </div>
-        
+        <div className='search'>
+        <Search/>
+        <input type={"text"} placeholder="Search..."></input>
+        </div>
         <div className='links'>
           <Link className='link' to={'/?cat=exam'}>
           <h5>Exam</h5>
@@ -25,20 +31,13 @@ const Navbar = () => {
           <h5>Admin</h5>
           </Link>
           
-          <span className='search'>
-          <Search/>
-          <input type={"text"} placeholder="Search"></input>
-          </span>
-          <span>
-            <Language className='icon'/> English
+          <span className='item'>
+            <Language/> English
             </span>
             <span><Link to="./Login">Logout
           </Link>
           </span>
           
-          
-
-  
         </div>
       </div>
     </div>

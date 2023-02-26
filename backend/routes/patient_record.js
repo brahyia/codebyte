@@ -14,7 +14,7 @@ const router = express.Router()
 // GET all patient records in the database
 router.get('/', getAllRecords)
 
-// GET one patient's record
+// GET one patient's record why not "/:id?"
 router.get('/:PATIENT_ID', getPatientRecord)
 
 // POST a new patient record
