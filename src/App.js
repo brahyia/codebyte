@@ -15,7 +15,7 @@ import Navbar from "./components/Navbar/Navbar";
 import "./Pages/Login/Login.scss";
 import "./components/Navbar/Navbar.scss";
 import "./styles.scss";
-
+import "./Pages/Admin/Admin.scss"
 
 //This is me attepting to load data in the app page!
 
@@ -72,39 +72,21 @@ const router = createBrowserRouter([
 
 function App() {
 
-//This is me attepting to load data in the app page!
-
-  // const [data,setData]=useState([]);
-  // const getData = () => {
-  //   fetch('generate.json', {
-  //     headers : {
-  //       'Content-Type': 'application/json',
-  //       'Accept' : 'application/json'
-  //     }
-  //   }
-  //   )
-  //   .then(function(response){
-  //     console.log(response)
-  //     return response.json();
-  //   })
-  //   .then(function(myJson){
-  //     console.log(myJson);
-  //     setData(myJson)
-  //   });
-  // }
-  // useEffect(()=>{
-  //   getData()
-  // }, [])
 
 
   return (
-    <div className="App">
+    <div>
+      {/* <Navbar/> */}
+      <div className="App">
       
       <div className="container">
         <RouterProvider router={router}></RouterProvider>
         
       </div>
     </div>
+
+    </div>
+    
   );
 }
 

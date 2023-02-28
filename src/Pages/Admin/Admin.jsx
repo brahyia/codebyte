@@ -4,8 +4,8 @@ import React from 'react'
 const Admin = () => {
   return (
    
-    <div className='hello'>
-      <button>
+    <div>
+      <button className='hello'>
         Create Exam
       </button>
     </div>
