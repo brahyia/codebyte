@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from "../Navbar/Logo192.png"
-import Search from "@mui/icons-material/Search";
+
 import Language from "@mui/icons-material/Language";
 
 
@@ -17,17 +17,16 @@ const Navbar = () => {
     <div className='navbar'>
       <div className='container'>
         <div className='logo'>
+        <Link to={'/'}>
         <img src={Logo} alt=''></img>
+        </Link>
         </div>
-        <div className='search'>
-        <Search/>
-        <input type={"text"} placeholder="Search..."></input>
-        </div>
+        
         <div className='links'>
-          <Link className='link' to={'/?cat=exam'}>
+          <Link className='link' to={'/exams'}>
           <h5>Exam</h5>
           </Link>
-          <Link className='link' to={'/?cat=admin'}>
+          <Link className='link' to={'/admin'}>
           <h5>Admin</h5>
           </Link>
           

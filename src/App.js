@@ -7,15 +7,20 @@ import {
 
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
-import Index from "./Pages/Index/Index";
+import Forms from "./Pages/Forms/Forms";
+import Exams from "./Pages/Exams/Exams";
+// import Index from "./Pages/Index/Index";
 import Admin from "./Pages/Admin/Admin";
 import Detail from "./Pages/Detail/Detail";
 import Navbar from "./components/Navbar/Navbar";
+
 
 import "./Pages/Login/Login.scss";
 import "./components/Navbar/Navbar.scss";
 import "./styles.scss";
 import "./Pages/Admin/Admin.scss"
+import "./Pages/Exams/Exams.scss"
+import "./Pages/Forms/Forms.scss"
 
 //This is me attepting to load data in the app page!
 
@@ -42,10 +47,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Layout/>,
     children:[
-      {
-        path : "/",
-         element: <Index/> 
-      }, 
+      // {
+      //   path : "/",
+      //    element: <Index/> 
+      // }, 
       {
         path: "/admin",
         element: <Admin/>,
@@ -53,6 +58,14 @@ const router = createBrowserRouter([
       {
         path: "/detail",
         element: <Detail/>,
+      },
+      {
+        path: "/exams",
+        element: <Exams/>,
+      },
+      {
+        path: "/exam/create",
+        element: <Forms/>,
       },
      
     ]   
@@ -66,6 +79,8 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login/>,
   },
+  
+  
   
   
 ]);
