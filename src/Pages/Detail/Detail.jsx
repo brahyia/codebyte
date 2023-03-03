@@ -1,39 +1,51 @@
-import React from 'react'
-
-import './Detail.scss'
+import React, { useEffect, useState } from 'react';
+import './Detail.scss';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Detail = () => {
-  return (
-    <div>
-    <body/> 
-    // Below I made a table to display the patient info and exam info
-    //I want to then 
-           <table class ="table"/>
-        <thead/>
-          <tr>
-            <th scope="col"></th>
-            <th scope="col">Patient Info:</th>
-            <th scope="col">Exam Info:</th>
-          </tr>
-            <thead/>
-            <tbody/>
-            <tr>
-              <th scope='row'></th>
-                <td>Sex:</td>
-                <td>Date:</td>
-                </tr>
-                <th scope='row'></th>
-                <td>Age:</td> 
-                <td>Image:</td>
-                <tr>
-                <th scope='row'></th>
-                <td>BMI:</td>
-                </tr>
-                <tbody/>
-                <table/>
-    <body/>
-    </div>
-  )
-}
+  const [details, setDetails] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(
+        'https://czi-covid-lypkrzry4q-uc.a.run.app/api/exams'
+      );
+      setDetails(response.data);
+      setLoading(true);
+      return response;
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
-export default Detail
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  return (
+    <div className="wrapper">
+      {!loading ? (
+        <p></p>
+      ) : (
+        <>
+          {details &&
+            details.exams?.map((item) => (
+                     <ul key={item._id} className="list">
+                      <li>{item.examId}</li>
+                      <li>Patient Id: {item.patientId}</li>
+                    
+                <li>
+                  <Link to={`/patient/${item._id}`}>
+                    <button>View Details</button>
+                  </Link>
+                </li> 
+                </ul> 
+            ))}
+        </>
+      )}
+    </div>
+  );
+};
+
+export default Detail;

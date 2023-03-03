@@ -27,7 +27,6 @@ const Navbar = () => {
           <Link className='link' to={'/detail'}>
           <h5>Detail</h5>
           </Link>
-          
           <span className='search'>
           <Search/>
           <input type={"text"} placeholder="Search"></input>

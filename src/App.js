@@ -14,6 +14,7 @@ import Footer from "./components/Footer/Footer";
 import "./Pages/Login/Login.scss";
 import "./components/Navbar/Navbar.scss";
 import "./styles.scss";
+import MoreDetails from "./Pages/Detail/MoreDetails";
 
 const Layout = ()=> {
   return (
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login/>,
+  },
+  {
+    path: '/Patient/:id',
+    element: <MoreDetails />,
   },
   
   
