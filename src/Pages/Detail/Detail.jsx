@@ -4,34 +4,20 @@ import './Detail.scss'
 
 const Detail = () => {
   return (
-    <div>
-    <body/> 
-    // Below I made a table to display the patient info and exam info
-    //I want to then 
-           <table class ="table"/>
-        <thead/>
-          <tr>
-            <th scope="col"></th>
-            <th scope="col">Patient Info:</th>
-            <th scope="col">Exam Info:</th>
-          </tr>
-            <thead/>
-            <tbody/>
-            <tr>
-              <th scope='row'></th>
-                <td>Sex:</td>
-                <td>Date:</td>
-                </tr>
-                <th scope='row'></th>
-                <td>Age:</td> 
-                <td>Image:</td>
-                <tr>
-                <th scope='row'></th>
-                <td>BMI:</td>
-                </tr>
-                <tbody/>
-                <table/>
-    <body/>
+    <div className="detail">
+      <h1>Detail</h1>
+      <div className="container">
+        <div className="patientColumn">
+          <div className="patientInfo">Patient Info</div>
+          <div className="idRow">
+            <label className="idLabel">Patient ID:</label>
+            <input type="text" className="patientId" value="AAAA"/>
+          </div>
+        </div>
+        <div className="examInfo">
+
+        </div>
+      </div>
     </div>
   )
 }
