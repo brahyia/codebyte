@@ -1,17 +1,23 @@
 import React from 'react'
-import Search from "@mui/icons-material/Search";
 
 
-const Index = () => {
+
+const Index = ({ Data }) => {
   return (
-    <div>
-      <div className='container'>
-        <div className='search'>
-        <Search/>
-        <input type={"text"} placeholder="Search..."></input>
-        </div>
-    </div>
-    </div>
+    <React.Fragment>
+      {Data && Data.exams.map(function (patientinfo) {
+
+        return (
+          <div key={patientinfo.id}>
+            <p >{patientinfo.age}</p>
+            <img src={patientinfo.imageURL} alt=''></img>
+            <p>{patientinfo.bmi}</p>
+          </div>
+
+
+        )
+      })};
+    </React.Fragment>
   )
 }
 

@@ -12,6 +12,13 @@ const Admin = () => {
       </button>
       </Link>
       
+      {/* <div>
+      <div className='addm'>
+        <label>Search: </label>
+        <input type={"text"} placeholder="" className='te'></input>
+      </div>
+    </div> */}
+
     </div>
    </div>
     

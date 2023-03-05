@@ -13,6 +13,8 @@ import Exams from "./Pages/Exams/Exams";
 import Admin from "./Pages/Admin/Admin";
 import Detail from "./Pages/Detail/Detail";
 import Navbar from "./components/Navbar/Navbar";
+import AsyncAwait from "./Pages/Reac/AsyncAwait";
+
 
 
 import "./Pages/Login/Login.scss";
@@ -25,15 +27,15 @@ import "./Pages/Forms/Forms.scss"
 //This is me attepting to load data in the app page!
 
 
-const Layout = ()=> {
+const Layout = () => {
   return (
     <>
-    <Navbar/>
-    <Outlet/>
+      <Navbar />
+      <Outlet />
 
     </>
   )
- }
+}
 
 
 
@@ -45,44 +47,48 @@ const router = createBrowserRouter([
   // },
   {
     path: "/",
-    element: <Layout/>,
-    children:[
+    element: <Layout />,
+    children: [
       // {
       //   path : "/",
       //    element: <Index/> 
       // }, 
       {
         path: "/admin",
-        element: <Admin/>,
+        element: <Admin />,
       },
       {
         path: "/detail",
-        element: <Detail/>,
+        element: <Detail />,
       },
       {
         path: "/exams",
-        element: <Exams/>,
+        element: <Exams />,
       },
       {
         path: "/exam/create",
-        element: <Forms/>,
+        element: <Forms />,
       },
-     
-    ]   
+
+    ]
   },
 
   {
     path: "/register",
-    element: <Register/>,
+    element: <Register />,
   },
   {
     path: "/login",
-    element: <Login/>,
+    element: <Login />,
   },
-  
-  
-  
-  
+  {
+    path: "/async",
+    element: <AsyncAwait />,
+  },
+
+
+
+
 ]);
 
 function App() {
@@ -93,15 +99,15 @@ function App() {
     <div>
       {/* <Navbar/> */}
       <div className="App">
-      
-      <div className="container">
-        <RouterProvider router={router}></RouterProvider>
-        
+
+        <div className="container">
+          <RouterProvider router={router}></RouterProvider>
+
+        </div>
       </div>
-    </div>
 
     </div>
-    
+
   );
 }
 
