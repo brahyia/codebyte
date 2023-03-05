@@ -1,7 +1,6 @@
 const Patient = require('../models/patientModel')
 const mongoose = require('mongoose')
 
-
 // get all patient records in the database
 const getAllRecords = async (req, res) => {
   try {
@@ -12,46 +11,52 @@ const getAllRecords = async (req, res) => {
   }
 }
 
-// get one patient's record
+// get a single patient record
+// to-do: decide which data is needed
 const getPatientRecord = async (req, res) => {
+  // destructuring: req.params.PATIENT_ID
   const { PATIENT_ID } = req.params
-  console.log(req.params.PATIENT_ID) // debug
+  console.log(req.params)
 
-    // this will get the key _id from the mongoDB record 
-    // Not necessary for now
-    // if (!mongoose.Types.ObjectId.isValid(id)) {
-    //   return res.status(404).json({error: 'Invalid patient ID'})
-    // }
+  // These are all the fields that will be returned in the query.
+  // The fields are separated by spaces. 
+  const fieldsToSelect = 'patientId age sex zip latestBmi latestWeight \
+  pngFileName examId icuAdmit numIcuAdmissions mortality'
 
-    const patientRecord = await Patient.find({'PATIENT_ID': PATIENT_ID})
-    // console.log(patientRecord)
+  const patientRecord = await Patient
+    .findOne({PATIENT_ID: PATIENT_ID})
+    .select(fieldsToSelect)
 
-    // if patient id does not exist a 404 error will be produced
-    if (!patientRecord) {
-      return res.status(404).json({error: "Invalid patient ID"})
-    }
+  // if patient id does not exist a 404 error will be produced
+  if (!patientRecord) {
+    return res.status(404).json({error: "Invalid patient ID"})
+  }
 
-    res.status(200).json({patientRecord})
+  res.status(200).json(patientRecord)
+  // console.log(patientRecord);
 }
 
-
 // create a new patient record
+// add new patient record to the database
 const createPatientRecord = async (req, res) => {
   const {name, id} = req.body
+  console.log(name + " " + id)
+  console.log(req.body)
 
-  // add new patient record to the database
   try {
-    const patientRecord = await Patient.create({name, id})
+    const patientRecord = await Patient.create(req.body)
+    console.log(patientRecord)
     res.status(200).json(patientRecord)
   } catch (error) {
     res.status(400).json({error: error.message})
   }
 }
 
-// delete a new patient record
+// delete a patient record
 const deletePatientRecord = async (req, res) => {
   // this gets the `req` parameter above
   const { id } = req.params
+  console.log(req.params)
 
   // check if the input ID value is valid
   if (!mongoose.Types.ObjectId.isValid(id)) {
@@ -59,6 +64,7 @@ const deletePatientRecord = async (req, res) => {
   }
 
   const patientRecord = await Patient.findOneAndDelete({_id: id})
+  console.log(patientRecord)
 
   // if patient id does not exist a 404 error will be produced
   if (!patientRecord) {
@@ -88,7 +94,6 @@ const updatePatientRecord = async (req, res) => {
 
   res.status(200).json(patientRecord)
 }
-
 
 // export functions so that they may be used with the routes
 module.exports = {
