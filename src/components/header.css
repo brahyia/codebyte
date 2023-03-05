@@ -1,0 +1,16 @@
+.header {
+    height: 65px;
+    background-color: #222;
+}
+
+.header .nav_items_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_items_wrap a {
+    color: #fff;
+    margin-right: 10px;
+
+}

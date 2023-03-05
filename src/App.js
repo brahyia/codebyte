@@ -1,12 +1,7 @@
-
+import React from 'react';
 import './App.css';
+import Main from './Main';
 
-function App() {
-  return (
-    <div className="App">
-      Tech Dive Project
-    </div>
-  );
-}
+const App = () => <Main />;
 
 export default App;
