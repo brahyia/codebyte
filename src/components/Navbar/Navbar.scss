@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+.navbar{
+    .container{
+        padding: 20px 0px ;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            img{
+                width: 50px;
+            }
+        }
+
+        
+    }
+}
+.link{
+    text-decoration: none;
+    color:inherit
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+.item{
+    display: flex;
+}

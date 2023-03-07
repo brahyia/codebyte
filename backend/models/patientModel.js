@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 // create a new schema
-const Schema = mongoose.Schema 
+const Schema = mongoose.Schema
 
 /*  
     the schema describes what the data should look like, e.g. if it should be a 
