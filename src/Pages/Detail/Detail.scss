@@ -9,3 +9,44 @@
       font-weight: bold;
     }
   }
+
+  .detail{
+    .container{
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 2em;
+        .patientColumn{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+
+            .patientInfo{
+                margin-top: 2em;
+                margin-bottom: 1em;
+                font-size: 1.5em;
+            }
+        }
+        .examColumn{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+
+            .examInfo{
+                margin-top: 2em;
+                margin-bottom: 1em;
+                font-size: 1.5em;
+            }
+
+            .examImage{
+                margin-top: 1em;
+                .examImage{
+                    max-width: 256px;
+                }
+            }
+        }
+    }
+}

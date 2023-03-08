@@ -30,30 +30,61 @@ const PatientDetails = () => {
     return <p></p>;
   }
   return (
-    <div className="wrapper">
-      <h2>Patient Details</h2>
-      <ul className="list">
-        <li>ID: {patient.exam?._id}</li>
-        <li>Sex: {patient.exam?.sex}</li>
-        <li>Age: {patient.exam?.age}</li>
-        <li>Patient Id: {patient.exam?.patientId}</li>
-        <li>Zip Code: {patient.exam?.zipCode}</li>
-        <li>BMI: {patient.exam?.bmi}</li>
-        <li>Exam Id: {patient.exam?.examId}</li>
-        <li>Key Findings: {patient.exam?.keyFindings}</li>
-        <li>Brixia Scores: {patient.exam?.brixiaScores}</li>
-        <li>
-          <img
-            src={patient.exam?.imageURL}
-            alt={'patient'}
-            style={{
-              width: '350px',
-              height: '350px',
-              cursor: 'pointer',
-            }}
-          />
-        </li>
-      </ul>
+    <div className="detail">
+      {/* <h1>Detail</h1> */}
+      <div className="container">
+        <div className="patientColumn">
+          <div className="patientInfo">Patient Info</div>
+          <div className="patientIdRow">
+            <label className="patientIdLabel">Patient ID: </label>
+            <input type="text" className="patientId" value={patient.exam?._id}/>
+          </div>
+          <div className="age">
+            <label>Age: </label>
+            <input type="text" className="ageValue" value={patient.exam?.age}/>
+          </div>
+          <div className="sex">
+            <label>Sex: </label>
+            <input type="text" className="sexValue" value={patient.exam?.sex}/>
+          </div>
+          <div className="BMI">
+            <label>BMI: </label>
+            <input type="text" className="BmiValue" value={patient.exam?.bmi}/>
+          </div>
+          <div className="zip">
+            <label>ZipCode: </label>
+            <input type="text" className="zipcode" value={patient.exam?.zipCode}/>
+          </div>
+        </div>
+        <div className="examColumn">
+          <div className="examInfo">Exam Info</div>
+          <div className="examIdRow">
+            <label className="examIdLabel">Exam ID: </label>
+            <input type="text" className="examId" value={patient.exam?.examId}/>
+          </div>
+          <div className="examImageRow">
+            <label>Image URL: </label>
+            <input type="text" className="examUrl" value={patient.exam?.imageURL}/>
+            <div className="examImage">
+              <div>
+              <img className="examImage" src={patient.exam?.imageURL} alt="Exam"/>
+              </div>
+            </div>
+          </div>
+          <div className="examDateRow">
+            <label>Date: </label>
+            <input type="text" className="examDate" value={patient.exam?.date}/>
+          </div>
+          <div className="keyFindingsRow">
+            <label>KeyFindings: </label>
+            <input type="text" className="keyFindings" value={patient.exam?.keyFindings}/>
+          </div>
+          <div className="brixiaScoreRow">
+            <label>Brixia Score: (seperated by comma)</label>
+            <input type="text" className="brixiaScore" value={patient.exam?.brixiaScores}/>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
