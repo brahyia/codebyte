@@ -1,0 +1,380 @@
+.text-contents {
+    width: 100%;
+    height: 0vh;
+    display: grid;
+    place-items: center;
+
+}
+
+h1 {
+    font-size: 35px;
+}
+
+.button-contents {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    gap: 10px;
+
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.BCD {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 2em;
+
+    .CDE {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+    }
+
+    .DEF {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        font-size: 1.5em;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .a {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+    }
+
+
+    .aa {
+        display: block;
+        width: 100%;
+        height: 2vh;
+        height: calc(01.5em + 0.75rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+    }
+
+    .AB {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+    }
+
+    .ab {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: rgb(73, 80, 87);
+        background-color: rgb(255, 255, 255);
+        background-clip: padding-box;
+        padding: 0.375rem 0.75rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(206, 212, 218);
+        border-image: initial;
+        border-radius: 0.25rem;
+    }
+
+    .BC {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+    }
+
+    .bc {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: rgb(73, 80, 87);
+        background-color: rgb(255, 255, 255);
+        background-clip: padding-box;
+        padding: 0.375rem 0.75rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(206, 212, 218);
+        border-image: initial;
+        border-radius: 0.25rem;
+    }
+
+    .CD {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+    }
+
+    .bb {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: rgb(73, 80, 87);
+        background-color: rgb(255, 255, 255);
+        background-clip: padding-box;
+        padding: 0.375rem 0.75rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(206, 212, 218);
+        border-image: initial;
+        border-radius: 0.25rem;
+    }
+
+    .DE {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+    }
+
+    .cd {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: rgb(73, 80, 87);
+        background-color: rgb(255, 255, 255);
+        background-clip: padding-box;
+        padding: 0.375rem 0.75rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(206, 212, 218);
+        border-image: initial;
+        border-radius: 0.25rem;
+    }
+}
+
+.TY {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    .PY {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        font-size: 1.5em;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .LY {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+    }
+
+    .bo {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: rgb(73, 80, 87);
+        background-color: rgb(255, 255, 255);
+        background-clip: padding-box;
+        padding: 0.375rem 0.75rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(206, 212, 218);
+        border-image: initial;
+        border-radius: 0.25rem;
+    }
+
+    .GY {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+    }
+
+    .go {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: rgb(73, 80, 87);
+        background-color: rgb(255, 255, 255);
+        background-clip: padding-box;
+        padding: 0.375rem 0.75rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(206, 212, 218);
+        border-image: initial;
+        border-radius: 0.25rem;
+    }
+
+    .FY {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+    }
+
+    .ho {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: rgb(73, 80, 87);
+        background-color: rgb(255, 255, 255);
+        background-clip: padding-box;
+        padding: 0.375rem 0.75rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(206, 212, 218);
+        border-image: initial;
+        border-radius: 0.25rem;
+    }
+
+    .MY {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+    }
+
+    .mo {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: rgb(73, 80, 87);
+        background-color: rgb(255, 255, 255);
+        background-clip: padding-box;
+        padding: 0.375rem 0.75rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(206, 212, 218);
+        border-image: initial;
+        border-radius: 0.25rem;
+        margin: 5px auto;
+        height: 129px;
+        max-width: 100%;
+    }
+
+    .HY {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+    }
+
+    .lo {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: rgb(73, 80, 87);
+        background-color: rgb(255, 255, 255);
+        background-clip: padding-box;
+        padding: 0.375rem 0.75rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(206, 212, 218);
+        border-image: initial;
+        border-radius: 0.25rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// .patient-info{
+//     display: flex;
+//     justify-content: center;
+//     gap: 450px;
+// }
+// .A{
+//     max-width: 100%;
+//     font-weight: bold;
+//     display: inline-block;
+//     margin-bottom: 0.5rem;
+
+// }
+// .B{
+//     width: 100%;
+//     height: 15vh;
+//     display: flex;
+//     place-items: center;
+//     justify-content: center;
+//     gap: 452px;
+// }
+// .form-control{
+//     display: block;
+//     width: 45%;
+//     height: 2vh;
+//     height: calc(01.5em + 0.75rem + 2px);
+//     padding: 0.375rem 0.75rem;
+//     font-size: 1rem;
+//     font-weight: 400;
+//     line-height: 1.5;
+//     color: #495057;
+//     background-color: #fff;
+//     background-clip: padding-box;
+//     border: 1px solid #ced4da;
+//     border-radius: 0.25rem;
