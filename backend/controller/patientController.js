@@ -15,7 +15,7 @@ const getAllRecords = async (req, res) => {
 // to-do: decide which data is needed
 const getPatientRecord = async (req, res) => {
   // destructuring: req.params.PATIENT_ID
-  const { PATIENT_ID } = req.params
+  const { patientId } = req.params
   console.log(req.params)
 
   // These are all the fields that will be returned in the query.
@@ -24,8 +24,11 @@ const getPatientRecord = async (req, res) => {
   pngFileName examId icuAdmit numIcuAdmissions mortality'
 
   const patientRecord = await Patient
-    .findOne({PATIENT_ID: PATIENT_ID})
+    .findOne({patientId: patientId})
     .select(fieldsToSelect)
+
+  
+  console.log(patientRecord)
 
   // if patient id does not exist a 404 error will be produced
   if (!patientRecord) {
@@ -78,8 +81,10 @@ const deletePatientRecord = async (req, res) => {
 const updatePatientRecord = async (req, res) => {
     // this gets the `req` parameter above
     const { id } = req.params
+    console.log(id);
+    console.log(req.body);
 
-      // check if the input ID value is valid
+  // check if the input ID value is valid
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return res.status(404).json({error: 'Invalid patient ID'})
   }
@@ -87,6 +92,8 @@ const updatePatientRecord = async (req, res) => {
   const patientRecord = await Patient.findOneAndUpdate({_id: id}, {
     ...req.body
   })
+  console.log(patientRecord);
+
 
   if (!patientRecord) {
     return res.status(400).json({error: "Invalid patient ID"})
