@@ -9,10 +9,12 @@ const Detail = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        'https://czi-covid-lypkrzry4q-uc.a.run.app/api/exams'
+        'https://codebyte-backend.onrender.com/api/patient_record/all_patient_records'
       );
-      setDetails(response.data);
+      console.log("response.data[0]" + response.data[0]);
+      setDetails(response.data[0]);
       setLoading(true);
+      console.log("response" + response);
       return response;
     } catch (error) {
       console.log(error);
