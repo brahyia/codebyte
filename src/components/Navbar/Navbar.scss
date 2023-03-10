@@ -1,12 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
 .navbar{
     .container{
-        padding: 10px 0px;
+        padding: 20px 0px ;
+        background-color: aquamarine;
         display: flex;
         justify-content: space-between;
         
         .logo{
             img{
-                width: 100px;
+                width: 50px;
             }
         }
 
@@ -21,4 +26,8 @@
 .links{
     display: flex;
     gap: 20px;
+}
+
+.item{
+    display: flex;
 }

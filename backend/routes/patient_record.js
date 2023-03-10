@@ -1,10 +1,10 @@
 const express = require('express')
-const {   
+const {
   getAllRecords,
   getPatientRecord,
   createPatientRecord,
   deletePatientRecord,
-  updatePatientRecord 
+  updatePatientRecord
 } = require('../controller/patientController')
 
 
@@ -12,10 +12,10 @@ const router = express.Router()
 
 
 // GET all patient records in the database
-router.get('/', getAllRecords)
+router.get('/all_patient_records', getAllRecords)
 
-// GET one patient's record
-router.get('/:PATIENT_ID', getPatientRecord)
+// GET one patient's record.
+router.get('/:patientId', getPatientRecord)
 
 // POST a new patient record
 router.post('/', createPatientRecord)

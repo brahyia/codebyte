@@ -1,5 +1,4 @@
-data
-PATIENT_ID,AGE,SEX,ZIP,LATEST_BMI,LATEST WEIGHT,png_filename,exam_Id,ICU Admit,# ICU admits,MORTALITY
+patient_id,age,sex,zip,latest_bmi,latest_weight,png_filename,exam_Id,icu_admit,num_icu_admits,mortality
 COVID-19-AR-16434409,51,M,722,37.7,207,COVID-19-AR-16434409_XR_CHEST_AP_PORTABLE_1.png,Exam-1,N,0,N
 COVID-19-AR-16434381,44,F,721,64.6,412,COVID-19-AR-16434381_XR_CHEST_AP_PORTABLE_2.png,Exam-1,N,0,N
 COVID-19-AR-16406513,44,M,722,33.3,190,COVID-19-AR-16434381_XR_CHEST_AP_ONLY_1.png,Exam-2,Y,1,N

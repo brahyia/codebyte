@@ -4,12 +4,17 @@
 /node_modules
 /.pnp
 .pnp.js
+data.csv
+backend/README.txt
+.gitignore
 
 # testing
 /coverage
 
 # production
 /build
+/codebyte/backend/.env
+
 
 # misc
 .DS_Store

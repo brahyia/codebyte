@@ -1,10 +1,23 @@
 import React from 'react'
 
 
-const Index = () => {
+
+const Index = ({ Data }) => {
   return (
-    <div className='index'>
-        Index</div>
+    <React.Fragment>
+      {Data && Data.exams.map(function (patientinfo) {
+
+        return (
+          <div key={patientinfo.id}>
+            <p >{patientinfo.age}</p>
+            <img src={patientinfo.imageURL} alt=''></img>
+            <p>{patientinfo.bmi}</p>
+          </div>
+
+
+        )
+      })};
+    </React.Fragment>
   )
 }
 
