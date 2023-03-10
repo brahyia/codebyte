@@ -1,0 +1,19 @@
+.patientinfoImage {
+    max-height: 4rem;
+    max-width: 4rem;
+    object-fit: scale-down;
+}
+
+.extable {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 98%;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
