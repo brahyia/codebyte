@@ -27,6 +27,7 @@ import "./Pages/Exams/Exams.scss"
 import "./Pages/Forms/Forms.scss"
 import "./Pages/Exam.scss"
 import "./Pages/AdminTable.scss"
+import "./Pages/Detail/Detail.scss"
 
 
 //This is me attepting to load data in the app page!

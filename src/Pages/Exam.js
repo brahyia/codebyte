@@ -33,7 +33,7 @@ const Exam = ({ Data }) => {
                                 <tr key={patientinfo.id}>
                                     <td>{patientinfo._id}</td>
 
-                                    <td>{<Link>{patientinfo.examId}</Link>}</td>
+                                    <td>{<Link to={'/detail'}>{patientinfo.examId}</Link>}</td>
                                     <td>{<img src={`https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/${patientinfo.pngFileName}`}
                                         alt='' className='patientinfoImage'></img>}</td>
                                     <td>{patientinfo.age}</td>
