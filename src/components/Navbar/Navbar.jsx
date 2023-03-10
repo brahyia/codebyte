@@ -29,7 +29,9 @@ const Navbar = () => {
           <Link className='link' to={'/admin'}>
             <h5>Admin</h5>
           </Link>
-
+<Link className='link' to={'/detail'}>
+          <h5>Detail</h5>
+          </Link>
           <span className='item'>
             <Language /> English
           </span>

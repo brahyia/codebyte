@@ -22,6 +22,8 @@ import Navbar from "./components/Navbar/Navbar";
 import "./Pages/Login/Login.scss";
 import "./components/Navbar/Navbar.scss";
 import "./styles.scss";
+import MoreDetails from "./Pages/Detail/MoreDetails";
+import PatientDetails from "./Pages/Detail/MoreDetails";
 import "./Pages/Admin/Admin.scss"
 import "./Pages/Exams/Exams.scss"
 import "./Pages/Forms/Forms.scss"
@@ -74,8 +76,11 @@ const router = createBrowserRouter([
         path: "/exam/create",
         element: <Forms />,
       },
-
-    ]
+      {
+        path: "/Patient/:id",
+        element: <MoreDetails/>,
+      },
+    ]   
   },
 
   {
