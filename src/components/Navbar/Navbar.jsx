@@ -11,32 +11,32 @@ import Language from "@mui/icons-material/Language";
 const Navbar = () => {
 
 
-  
-  
+
+
   return (
     <div className='navbar'>
       <div className='container'>
         <div className='logo'>
-        <Link to={'/'}>
-        <img src={Logo} alt=''></img>
-        </Link>
+          <Link to={'/exams'}>
+            <img src={Logo} alt=''></img>
+          </Link>
         </div>
-        
+
         <div className='links'>
           <Link className='link' to={'/exams'}>
-          <h5>Exam</h5>
+            <h5>Exam</h5>
           </Link>
           <Link className='link' to={'/admin'}>
-          <h5>Admin</h5>
+            <h5>Admin</h5>
           </Link>
-          
+
           <span className='item'>
-            <Language/> English
-            </span>
-            <span><Link to="./Login">Logout
+            <Language /> English
+          </span>
+          <span><Link to="./Login">Logout
           </Link>
           </span>
-          
+
         </div>
       </div>
     </div>

@@ -1,10 +1,10 @@
 const express = require('express')
-const {   
+const {
   getAllRecords,
   getPatientRecord,
   createPatientRecord,
   deletePatientRecord,
-  updatePatientRecord 
+  updatePatientRecord
 } = require('../controller/patientController')
 
 
