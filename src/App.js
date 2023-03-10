@@ -3,6 +3,7 @@ import {
   Outlet,
   RouterProvider,
 } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 
 
 import Login from "./Pages/Login/Login";
@@ -13,7 +14,7 @@ import Exams from "./Pages/Exams/Exams";
 import Admin from "./Pages/Admin/Admin";
 import Detail from "./Pages/Detail/Detail";
 import Navbar from "./components/Navbar/Navbar";
-import AsyncAwait from "./Pages/Reac/AsyncAwait";
+// import AsyncAwait from "./Pages/Reac/AsyncAwait";
 
 
 
@@ -81,10 +82,10 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login />,
   },
-  {
-    path: "/async",
-    element: <AsyncAwait />,
-  },
+  // {
+  //   path: "/async",
+  //   element: <AsyncAwait />,
+  // },
 
 
 
@@ -92,8 +93,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  // const [message, setMessage] = useState("");
 
-
+  // useEffect(() => {
+  //   fetch("http://localhost:4000/api/patient_record")
+  //     .then((res) => res.json())
+  //     .then((data) => setMessage(data.message));
+  // }, []);
 
   return (
     <div>
@@ -102,6 +108,7 @@ function App() {
 
         <div className="container">
           <RouterProvider router={router}></RouterProvider>
+          {/* <h1>{message}</h1> */}
 
         </div>
       </div>
