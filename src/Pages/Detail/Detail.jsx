@@ -32,10 +32,11 @@ const Detail = () => {
           {details &&
             details.exams?.map((item) => (
                      <ul key={item._id} className="list">
+                      
                       <li>{item.examId}</li>
                       <li>Patient Id: {item.patientId}</li>
                     
-                <li>
+                <li className="button">
                   <Link to={`/patient/${item._id}`}>
                     <button>View Details</button>
                   </Link>

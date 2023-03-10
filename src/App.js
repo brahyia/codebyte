@@ -15,6 +15,7 @@ import "./Pages/Login/Login.scss";
 import "./components/Navbar/Navbar.scss";
 import "./styles.scss";
 import MoreDetails from "./Pages/Detail/MoreDetails";
+import PatientDetails from "./Pages/Detail/MoreDetails";
 
 const Layout = ()=> {
   return (
@@ -50,7 +51,10 @@ const router = createBrowserRouter([
         path: "/Detail",
         element: <Detail/>,
       },
-     
+      {
+        path: "/Patient/:id",
+        element: <MoreDetails/>,
+      },
     ]   
   },
 
