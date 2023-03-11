@@ -11,8 +11,8 @@ const Detail = () => {
       const response = await axios.get(
         'https://codebyte-backend.onrender.com/api/patient_record/all_patient_records'
       );
-      console.log("response.data[0]" + response.data[0]);
-      setDetails(response.data[0]);
+      setDetails(response.data);
+      console.log(response)
       setLoading(true);
       console.log("response" + response);
       return response;
