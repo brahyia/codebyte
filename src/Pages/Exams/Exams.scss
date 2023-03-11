@@ -21,3 +21,20 @@
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
 }
+
+
+.wrapper {
+    .list {
+      list-style: none;
+      padding: .25rem;
+    }
+    li {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 16px;
+      margin-bottom: 10px;
+      line-height: 1.5;
+      font-weight: bold;
+    }
+  }
