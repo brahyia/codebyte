@@ -23,6 +23,7 @@ import "./components/Navbar/Navbar.scss";
 import "./styles.scss";
 import MoreDetails from "./Pages/Detail/MoreDetails";
 import PatientDetails from "./Pages/Detail/MoreDetails";
+import Exams2 from "./Pages/Exams/FixedExams";
 import "./Pages/Admin/Admin.scss"
 import "./Pages/Exams/Exams.scss"
 import "./Pages/Forms/Forms.scss"
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
       {
         path: "/Patient/:id",
         element: <MoreDetails/>,
+      },
+      {
+        path: "/exams2",
+        element: <Exams2/>,
       },
     ]   
   },

@@ -23,18 +23,111 @@
 }
 
 
-.wrapper {
-    .list {
-      list-style: none;
-      padding: .25rem;
-    }
-    li {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      font-size: 16px;
-      margin-bottom: 10px;
-      line-height: 1.5;
-      font-weight: bold;
-    }
-  }
+// .wrapper {
+//     .list {
+//       list-style: none;
+//       padding: .25rem;
+//     }
+//     li {
+//       display: flex;
+//       justify-content: space-evenly;
+//       align-items: center;
+//       font-size: 16px;
+//       margin-bottom: 10px;
+//       line-height: 1.5;
+//       font-weight: bold;
+//     }
+//   }
+
+// .examPageTable{
+
+//   display: table;
+//   table-layout: fixed;
+//   width: 100%;
+//   border-collapse: collapse;
+//   border: 2px solid black;
+
+//   .tableHeaderRoot{
+//     .headerRow{
+//       background-color: #ced4da;
+//     }
+
+//   }
+
+//   .wrapper{
+//     .tableBodyRoot{
+//       width: 100%;
+//       .tableRows{
+//         .ImageCells{
+//           img{
+//             width: 65px;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+  
+//   tr{
+//     height: 50px;
+//     display: table-row-group;
+//   }
+  
+//   .examPageTable, th, td{
+//     border: 1.5px solid;
+//   }
+  
+//   td, th{
+//     width: 11.1111%;
+//   }
+  
+//   th{
+//     height: 70px;
+//     text-align: center;
+//   }
+
+// }
+
+.examPageTable {
+  margin: auto; /* center the table */
+  width: 100%; /* make the table take up the full width of its container */
+  border-collapse: collapse; /* collapse the borders between cells */
+}
+
+.tableHeaderRoot,
+.tableBodyRoot {
+  text-align: center; /* center the content horizontally */
+}
+
+.tableHeaderRoot th,
+.tableBodyRoot td {
+  padding: 10px; /* add some padding for readability */
+  border: 1px solid black; /* add a border around each cell */
+}
+
+.tableHeaderRoot th {
+  background-color: lightgray; /* add a background color to the header row */
+  font-weight: bold; /* make the header text bold */
+}
+
+.tableRows:nth-child(even) {
+  background-color: #f2f2f2; /* add a background color to even rows */
+}
+
+.tableRows:hover {
+  background-color: #ddd; /* highlight the row on hover */
+}
+
+/* add specific styles for each column */
+.patientId,
+.ExamId,
+.Image,
+.KeyFindings,
+.BrixiaScore,
+.Age,
+.Sex,
+.Bmi,
+.Zip {
+  width: 10%; /* set the width to 10% for all columns */
+  text-align: center; /* center the text horizontally */
+}

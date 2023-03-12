@@ -1,18 +1,21 @@
+// import Search from "@mui/icons-material/Search";
+// import {useEffect, useState} from 'react'
+// import App from './App';
 import React, { useEffect, useState } from 'react';
-import './Detail.scss';
+import './Exams.scss';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-const Detail = () => {
+const Exams2 = () => {
   const [details, setDetails] = useState([]);
   const [loading, setLoading] = useState(false);
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        'https://codebyte-backend.onrender.com/api/patient_record/all_patient_records'
+        'https://czi-covid-lypkrzry4q-uc.a.run.app/api/exams'
       );
+      console.log("response.data[0]" + response.data);
       setDetails(response.data);
-      console.log(response)
       setLoading(true);
       console.log("response" + response);
       return response;
@@ -26,7 +29,13 @@ const Detail = () => {
   }, []);
 
   return (
-    <div className="wrapper">
+    <div>
+      <div className='textt'>
+        <label>Search: </label>
+        <input type={"text"} placeholder="" className='te'></input>
+
+      </div>
+      <div className="wrapper">
       {!loading ? (
         <p></p>
       ) : (
@@ -48,7 +57,11 @@ const Detail = () => {
         </>
       )}
     </div>
-  );
-};
+      
 
-export default Detail;
+    </div>
+
+  )
+}
+
+export default Exams2
