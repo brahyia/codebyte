@@ -88,46 +88,62 @@
 
 // }
 
+img{
+  width: 75px;
+}
+
 .examPageTable {
   margin: auto; /* center the table */
-  width: 100%; /* make the table take up the full width of its container */
+  width: 80%; /* make the table take up the full width of its container */
   border-collapse: collapse; /* collapse the borders between cells */
 }
 
 .tableHeaderRoot,
 .tableBodyRoot {
   text-align: center; /* center the content horizontally */
+  width: 100%;
+  
 }
 
 .tableHeaderRoot th,
 .tableBodyRoot td {
-  padding: 10px; /* add some padding for readability */
+  padding: 0px; /* add some padding for readability */
   border: 1px solid black; /* add a border around each cell */
 }
 
 .tableHeaderRoot th {
-  background-color: lightgray; /* add a background color to the header row */
+  background-color: rgb(154, 154, 154); /* add a background color to the header row */
   font-weight: bold; /* make the header text bold */
 }
 
-.tableRows:nth-child(even) {
-  background-color: #f2f2f2; /* add a background color to even rows */
+.tableRows:nth-child(odd) {
+  background-color: #d4d4d4; /* add a background color to even rows */
 }
+
+
 
 .tableRows:hover {
   background-color: #ddd; /* highlight the row on hover */
 }
 
-/* add specific styles for each column */
-.patientId,
-.ExamId,
-.Image,
-.KeyFindings,
-.BrixiaScore,
-.Age,
-.Sex,
-.Bmi,
-.Zip {
-  width: 10%; /* set the width to 10% for all columns */
-  text-align: center; /* center the text horizontally */
+td, th{
+  height: 60px;
+  border: 1 px solid black;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.tableRows{
+  display: table-row;
+  width: 100%;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+tr{
+  table-layout: fixed;
+  display: table-row-group;
 }

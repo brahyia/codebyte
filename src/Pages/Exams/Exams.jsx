@@ -50,52 +50,52 @@ const Exams = () => {
           </tr>
         </thead>
 
-      <div className="wrapper">
-      {!loading ? (
-        <p></p>
-      ) : (
-        <>
-          {details &&
-            details.exams?.map((item) => (
-                        <tbody className="tableBodyRoot">
-                            <tr className="tableRows" role="row">
-                                <td className="patientIdCells" role="cell">
-                                    <Link to={`/patient/${item._id}`}>
-                                        <span>{item.patientId}</span>
-                                    </Link>
-                                </td>
-                                <td className="examIdCells" role="cell">
-                                    <Link to={`/patient/${item._id}`}>
-                                        <span>{item.examId}</span>
-                                    </Link>
-                                </td>
-                                <td className="ImageCells" role="cell">
-                                    <img src={item.imageURL} alt="exam"/>
-                                </td>
-                                <td className="keyFindingsCells" role="cell">
-                                    <span>{item.keyFindings}</span>
-                                </td>
-                                <td className="BrixiaCells" role="cell">
-                                <span>{item.brixiaScore}</span>
-                                </td>
-                                <td className="AgeCells" role="cell">
-                                    <span>{item.age}</span>
-                                </td>
-                                <td className="SexCells" role="cell">
-                                    <span>{item.sex}</span>
-                                </td>
-                                <td className="BmiCells" role="cell">
-                                    <span>{item.bmi}</span>
-                                </td>
-                                <td className="ZipCells" role="cell">
-                                    <span>{item.zip}</span>
-                                </td>
-                            </tr>
-                        </tbody>
-            ))}
-        </>
-      )}
-      </div>
+        <div className="wrapper">
+        {!loading ? (
+          <p></p>
+        ) : (
+          <>
+            {details &&
+              details.exams?.map((item) => (
+                          <tbody className="tableBodyRoot">
+                              <tr className="tableRows" role="row">
+                                  <td className="patientIdCells" role="cell">
+                                      <Link to={`/patient/${item._id}`}>
+                                          <span>{item.patientId}</span>
+                                      </Link>
+                                  </td>
+                                  <td className="examIdCells" role="cell">
+                                      <Link to={`/patient/${item._id}`}>
+                                          <span>{item.examId}</span>
+                                      </Link>
+                                  </td>
+                                  <td className="ImageCells" role="cell">
+                                      <img src={item.imageURL} alt="exam"/>
+                                  </td>
+                                  <td className="keyFindingsCells" role="cell">
+                                      <span>{item.keyFindings}</span>
+                                  </td>
+                                  <td className="BrixiaCells" role="cell">
+                                  <span>{item.brixiaScores}</span>
+                                  </td>
+                                  <td className="AgeCells" role="cell">
+                                      <span>{item.age}</span>
+                                  </td>
+                                  <td className="SexCells" role="cell">
+                                      <span>{item.sex}</span>
+                                  </td>
+                                  <td className="BmiCells" role="cell">
+                                      <span>{item.bmi}</span>
+                                  </td>
+                                  <td className="ZipCells" role="cell">
+                                      <span>{item.zip}</span>
+                                  </td>
+                              </tr>
+                          </tbody>
+              ))}
+          </>
+        )}
+        </div>
       </table>
     </div>
 
