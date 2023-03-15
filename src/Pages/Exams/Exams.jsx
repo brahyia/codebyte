@@ -29,7 +29,7 @@ const Exams = () => {
   }, []);
 
   return (
-    <div>
+    <div className='main'>
       <div className='textt'>
         <label>Search: </label>
         <input type={"text"} placeholder="" className='te'></input>
@@ -88,7 +88,7 @@ const Exams = () => {
                                       <span>{item.bmi}</span>
                                   </td>
                                   <td className="ZipCells" role="cell">
-                                      <span>{item.zip}</span>
+                                      <span>{item.zipCode}</span>
                                   </td>
                               </tr>
                           </tbody>

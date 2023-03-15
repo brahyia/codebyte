@@ -23,127 +23,63 @@
 }
 
 
-// .wrapper {
-//     .list {
-//       list-style: none;
-//       padding: .25rem;
-//     }
-//     li {
-//       display: flex;
-//       justify-content: space-evenly;
-//       align-items: center;
-//       font-size: 16px;
-//       margin-bottom: 10px;
-//       line-height: 1.5;
-//       font-weight: bold;
-//     }
-//   }
 
-// .examPageTable{
-
-//   display: table;
-//   table-layout: fixed;
-//   width: 100%;
-//   border-collapse: collapse;
-//   border: 2px solid black;
-
-//   .tableHeaderRoot{
-//     .headerRow{
-//       background-color: #ced4da;
-//     }
-
-//   }
-
-//   .wrapper{
-//     .tableBodyRoot{
-//       width: 100%;
-//       .tableRows{
-//         .ImageCells{
-//           img{
-//             width: 65px;
-//           }
-//         }
-//       }
-//     }
-//   }
-
-  
-//   tr{
-//     height: 50px;
-//     display: table-row-group;
-//   }
-  
-//   .examPageTable, th, td{
-//     border: 1.5px solid;
-//   }
-  
-//   td, th{
-//     width: 11.1111%;
-//   }
-  
-//   th{
-//     height: 70px;
-//     text-align: center;
-//   }
-
-// }
-
-img{
-  width: 75px;
+* {
+  /* Change your font family */
+  font-family: sans-serif;
 }
 
 .examPageTable {
-  margin: auto; /* center the table */
-  width: 80%; /* make the table take up the full width of its container */
-  border-collapse: collapse; /* collapse the borders between cells */
+  border-collapse: collapse;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 1em;
+  min-width: 300px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: whitesmoke;
 }
 
-.tableHeaderRoot,
-.tableBodyRoot {
-  text-align: center; /* center the content horizontally */
-  width: 100%;
-  
-}
-
-.tableHeaderRoot th,
-.tableBodyRoot td {
-  padding: 0px; /* add some padding for readability */
-  border: 1px solid black; /* add a border around each cell */
-}
-
-.tableHeaderRoot th {
-  background-color: rgb(154, 154, 154); /* add a background color to the header row */
-  font-weight: bold; /* make the header text bold */
-}
-
-.tableRows:nth-child(odd) {
-  background-color: #d4d4d4; /* add a background color to even rows */
-}
-
-
-
-.tableRows:hover {
-  background-color: #ddd; /* highlight the row on hover */
-}
-
-td, th{
-  height: 60px;
-  border: 1 px solid black;
-  text-align: center;
-  vertical-align: middle;
-  padding: 10px;
-}
-
-.tableRows{
-  display: table-row;
-  width: 100%;
-}
-
-.wrapper{
-  width: 100%;
-}
-
-tr{
+.examPageTable thead, .examPageTable tbody{
+  display: table;
   table-layout: fixed;
-  display: table-row-group;
+  width: 100%;
+  min-width: 200px;
+}
+
+
+
+.examPageTable thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.examPageTable th,
+.examPageTable td {
+  padding: 12px 15px;
+  font-size: larger;
+}
+
+.examPageTable tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.examPageTable tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.examPageTable tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.examPageTable tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+img{
+  width: 100%;
 }
