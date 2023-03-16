@@ -20,7 +20,7 @@ const Navbar = () => {
           {/* <Link to={'/exams'}>
             <img src={Logo} alt=''></img>
           </Link> */}
-          <Link className='logoLink' to={'/exams'}>
+          <Link className='logolink' to={'/exams'}>
             <h1>CodeByte</h1>
           </Link>
         </div>
@@ -39,7 +39,7 @@ const Navbar = () => {
             <Language />English
           </span>
           <span className='item'>
-            <Link to="./Login">Logout</Link>
+            <Link className='link' to="./Login">Logout</Link>
           </span>
 
         </div>

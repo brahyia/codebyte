@@ -86,3 +86,33 @@
 img{
   width: 100%;
 }
+
+.Detail-Link{
+  color: #009879;
+  text-decoration: none;
+}
+
+.Detail-Link:visited{
+  color: inherit;
+}
+
+.Detail-Link:hover{
+  color: #009879;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+      display: flex;
+  }
+
+  main {
+      margin: 2%;
+  }
+}

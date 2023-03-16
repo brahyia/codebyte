@@ -14,14 +14,15 @@
 //     }
 //   }
 
-  .detail{
+  .main{
+    height: 100vh;
+    width: 100vw;
     .container{
-        margin-left: 12.5%;
-        margin-right: 12.5%;
         width: 75%;
         display: flex;
-        justify-content: space-evenly;
-        margin-bottom: 2em;
+        justify-content: space-around;
+        margin-bottom: 4em;
+        margin-top: 4em;
 
         label{
             justify-content: center;
@@ -35,6 +36,7 @@
 
 
         .patientColumn{
+            background-color: darkolivegreen;
             width: 45%;
             display: flex;
             flex-direction: column;
@@ -51,6 +53,7 @@
             }
         }
         .examColumn{
+            background-color: darkolivegreen;
             width: 45%;
             display: flex;
             flex-direction: column;
@@ -71,3 +74,13 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px) {
+    main {
+        display: flex;
+    }
+  
+    main {
+        margin: 2%;
+    }
+  }

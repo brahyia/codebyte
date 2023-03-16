@@ -60,12 +60,12 @@ const Exams = () => {
                           <tbody className="tableBodyRoot">
                               <tr className="tableRows" role="row">
                                   <td className="patientIdCells" role="cell">
-                                      <Link to={`/patient/${item._id}`}>
+                                      <Link className='Detail-Link' to={`/patient/${item._id}`}>
                                           <span>{item.patientId}</span>
                                       </Link>
                                   </td>
                                   <td className="examIdCells" role="cell">
-                                      <Link to={`/patient/${item._id}`}>
+                                      <Link className='Detail-Link' to={`/patient/${item._id}`}>
                                           <span>{item.examId}</span>
                                       </Link>
                                   </td>

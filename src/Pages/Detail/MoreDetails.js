@@ -30,7 +30,7 @@ const PatientDetails = () => {
     return <p></p>;
   }
   return (
-    <div className="detail">
+    <div className="main">
       {/* <h1>Detail</h1> */}
       <div className="container">
         <div className="patientColumn">

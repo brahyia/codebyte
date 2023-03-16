@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Admin = () => {
   return (
-   <div className='container'>
+   <div className='main'>
     <div className='bcontainer'>
       <Link to={'/exam/create'}>
       <button className='hello'>

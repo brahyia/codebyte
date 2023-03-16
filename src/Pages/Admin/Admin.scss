@@ -28,3 +28,18 @@
 //     place-items: center;
 //     justify-content: center;
 // }
+
+.main{
+  width: 100vw;
+  height: 100vh;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        display: flex;
+    }
+  
+    main {
+        margin: 2%;
+    }
+  }
