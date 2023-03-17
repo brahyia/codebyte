@@ -16,9 +16,8 @@
 
   .detail{
     .container{
-        margin-left: 12.5%;
-        margin-right: 12.5%;
-        width: 75%;
+        margin: auto;
+        width: 100%;
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 2em;
@@ -35,10 +34,11 @@
 
 
         .patientColumn{
-            width: 45%;
+            width: 160%;
             display: flex;
             flex-direction: column;
             gap: 2em;
+            align-items: center;
 
             div{
             font-size: 20px;
@@ -51,7 +51,7 @@
             }
         }
         .examColumn{
-            width: 45%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             gap: 2em;
