@@ -18,7 +18,8 @@
     height: 100vh;
     width: 100vw;
     .container{
-        width: 75%;
+        margin: auto;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         margin-bottom: 4em;
@@ -36,11 +37,11 @@
 
 
         .patientColumn{
-            background-color: darkolivegreen;
-            width: 45%;
+            width: 160%;
             display: flex;
             flex-direction: column;
             gap: 2em;
+            align-items: center;
 
             div{
             font-size: 20px;
@@ -53,8 +54,7 @@
             }
         }
         .examColumn{
-            background-color: darkolivegreen;
-            width: 45%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             gap: 2em;
