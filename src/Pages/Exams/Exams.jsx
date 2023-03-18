@@ -7,12 +7,13 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 const Exams = () => {
+  const imgURL = "https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/";
   const [details, setDetails] = useState([]);
   const [loading, setLoading] = useState(false);
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        'https://czi-covid-lypkrzry4q-uc.a.run.app/api/exams'
+        'https://codebyte-backend.onrender.com/api/patient_record/all_patient_records'
       );
       console.log("response.data[0]" + response.data[0]);
       setDetails(response.data);
@@ -70,13 +71,13 @@ const Exams = () => {
                                       </Link>
                                   </td>
                                   <td className="ImageCells" role="cell">
-                                      <img src={item.imageURL} alt="exam"/>
+                                      <img src={imgURL + item.pngFileName} alt="exam"/>
                                   </td>
                                   <td className="keyFindingsCells" role="cell">
                                       <span>{item.keyFindings}</span>
                                   </td>
                                   <td className="BrixiaCells" role="cell">
-                                  <span>{item.brixiaScores}</span>
+                                  <span>{item.brixiaScore}</span>
                                   </td>
                                   <td className="AgeCells" role="cell">
                                       <span>{item.age}</span>
@@ -85,10 +86,10 @@ const Exams = () => {
                                       <span>{item.sex}</span>
                                   </td>
                                   <td className="BmiCells" role="cell">
-                                      <span>{item.bmi}</span>
+                                      <span>{item.latestBmi}</span>
                                   </td>
                                   <td className="ZipCells" role="cell">
-                                      <span>{item.zipCode}</span>
+                                      <span>{item.zip}</span>
                                   </td>
                               </tr>
                           </tbody>
