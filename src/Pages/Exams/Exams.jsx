@@ -1,7 +1,4 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
 import Exam from '../Exam'
-
 // import App from './App';
 import React, { useEffect, useState } from 'react';
 import './Exams.scss';
