@@ -1,9 +1,20 @@
 .App{
+    
     display: flex;
     justify-content: center;
-    background-color: white;
+    // background: radial-gradient(circle at top right,transparent 10%,#f1f1f1 10%, #f1f1f1 20%, transparent 21%), radial-gradient(circle at left bottom,transparent 10%,#f1f1f1 10%,#f1f1f1 20%, transparent 21%),radial-gradient(circle at top left,transparent 10%,#f1f1f1 10%,#f1f1f1 20%, transparent 21%), radial-gradient(circle at right bottom,transparent 10%,#f1f1f1 10%,#f1f1f1 20%, transparent 21%), radial-gradient(circle at center,#f1f1f1 30%, transparent 31%);
+    // background-size: 3em 3em;
+    // background-color: #ffffff;
+    // opacity: 1;
+
+    background-color: whitesmoke;
+    opacity: 1;
+    // background-image:  radial-gradient(#004a5f 1.3px, transparent 1.3px), radial-gradient(#004a5f 1.3px, #ffffff 1.3px);
+    background-size: 52px 52px;
+    background-position: 0 0,26px 26px;
+
     .container{
-        width: 1024px;
+        width: 100%;
         
         //Login & Register
 

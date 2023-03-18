@@ -17,8 +17,11 @@ const Navbar = () => {
     <div className='navbar'>
       <div className='container'>
         <div className='logo'>
-          <Link to={'/exams'}>
+          {/* <Link to={'/exams'}>
             <img src={Logo} alt=''></img>
+          </Link> */}
+          <Link className='logolink' to={'/exams'}>
+            <h1>CodeByte</h1>
           </Link>
         </div>
 
@@ -29,12 +32,14 @@ const Navbar = () => {
           <Link className='link' to={'/admin'}>
             <h5>Admin</h5>
           </Link>
-
+          {/* <Link className='link' to={'/detail'}>
+          <h5>Detail</h5>
+          </Link> */}
           <span className='item'>
-            <Language /> English
+            <Language />English
           </span>
-          <span><Link to="./Login">Logout
-          </Link>
+          <span className='item'>
+            <Link className='link' to="./Login">Logout</Link>
           </span>
 
         </div>
