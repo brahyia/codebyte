@@ -32,7 +32,7 @@ const PatientDetails = () => {
       return <p></p>;
     }
     return (
-    <div className="detail">
+    <div className="main">
       {/* <h1>Detail</h1> */}
       <div className="container">
         <div className="patientColumn">
@@ -48,6 +48,10 @@ const PatientDetails = () => {
           <div className="sex">
             <label>Sex: </label>
             <input type="text" className="sexValue" value={patient.exams?.sex}/>
+          </div>
+          <div className="weight">
+            <label>Weight: </label>
+            <input type="text" className="weightValue" value={patient.exams?.weight}/>
           </div>
           <div className="BMI">
             <label>BMI: </label>
@@ -69,7 +73,7 @@ const PatientDetails = () => {
             <input type="text" className="examUrl" value={patient.exams?.pngFileName}/>
             <div className="examImage">
               <div>
-              <img className="examImage" src={"https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/" + patient.exams?.pngFileName} alt="Exam"/>
+              <img className="examImage" src={imgURL + patient.exams?.pngFileName} alt="Exam"/>
               </div>
             </div>
           </div>
@@ -78,8 +82,8 @@ const PatientDetails = () => {
             <input type="text" className="examDate" value={patient.exams?.date}/>
           </div>
           <div className="keyFindingsRow">
-            <label>KeyFindings: </label>
-            <input type="text" className="keyFindings" value={patient.exams?.keyFindings}/>
+            <label>Mortality: </label>
+            <input type="text" className="keyFindings" value={patient.exams?.mortality}/>
           </div>
           <div className="brixiaScoreRow">
             <label>Brixia Score: (seperated by comma)</label>

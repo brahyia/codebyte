@@ -80,20 +80,16 @@
 
 .examPageTable tbody tr.active-row {
   font-weight: bold;
-  color: #009879;
+  color: black;
 }
 
-img{
-  width: 100%;
-}
-
-.Detail-Link{
-  color: #009879;
+.Detail-Link:default{
+  color: black;
   text-decoration: none;
 }
 
 .Detail-Link:visited{
-  color: inherit;
+  color: black;
 }
 
 .Detail-Link:hover{
@@ -107,12 +103,6 @@ main{
   height: 100vh;
 }
 
-@media only screen and (min-width: 768px) {
-  main {
-      display: flex;
-  }
-
-  main {
-      margin: 2%;
-  }
+.ImageCells img{
+  width: 100px;
 }

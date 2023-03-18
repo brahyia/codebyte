@@ -42,9 +42,10 @@ const Exams = () => {
               <th className="patientId" role="columnheader" scope="col" colspan="1" title="Toggle sort By">Patient ID<span></span></th>
               <th className="ExamId" role="columnheader" scope="col" colspan="1" title="Toggle sort By">Exam ID<span></span></th>
               <th className="Image" role="columnheader" scope="col" colspan="1" title="Toggle sort By">Image<span></span></th>
-              <th className="KeyFindings" role="columnheader" scope="col" colspan="1" title="Toggle sort By">Key Findings<span></span></th>
+              <th className="KeyFindings" role="columnheader" scope="col" colspan="1" title="Toggle sort By">Mortality<span></span></th>
               <th className="BrixiaScore" role="columnheader" scope="col" colspan="1" title="Toggle sort By">Brixia Score<span></span></th>
               <th className="Age" role="columnheader" scope="col" colspan="1" title="Toggle sort By">Age<span></span></th>
+              <th className="Age" role="columnheader" scope="col" colspan="1" title="Toggle sort By">Weight<span></span></th>
               <th className="Sex" role="columnheader" scope="col" colspan="1" title="Toggle sort By">Sex<span></span></th>
               <th className="Bmi" role="columnheader" scope="col" colspan="1" title="Toggle sort By">BMI<span></span></th>
               <th className="Zip" role="columnheader" scope="col" colspan="1" title="Toggle sort By">Zip Code<span></span></th>
@@ -74,7 +75,7 @@ const Exams = () => {
                                       <img src={imgURL + item.pngFileName} alt="exam"/>
                                   </td>
                                   <td className="keyFindingsCells" role="cell">
-                                      <span>{item.keyFindings}</span>
+                                      <span>{item.mortality}</span>
                                   </td>
                                   <td className="BrixiaCells" role="cell">
                                   <span>{item.brixiaScore}</span>
@@ -84,6 +85,9 @@ const Exams = () => {
                                   </td>
                                   <td className="SexCells" role="cell">
                                       <span>{item.sex}</span>
+                                  </td>
+                                  <td className="AgeCells" role="cell">
+                                      <span>{item.latestWeight}</span>
                                   </td>
                                   <td className="BmiCells" role="cell">
                                       <span>{item.latestBmi}</span>
