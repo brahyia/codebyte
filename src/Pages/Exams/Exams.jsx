@@ -1,5 +1,7 @@
-// import Search from "@mui/icons-material/Search";
-// import {useEffect, useState} from 'react'
+import React from 'react'
+import { useEffect, useState } from 'react'
+import Exam from '../Exam'
+
 // import App from './App';
 import React, { useEffect, useState } from 'react';
 import './Exams.scss';
@@ -35,7 +37,6 @@ const Exams = () => {
         <label>Search: </label>
         <input type={"text"} placeholder="" className='te'></input>
       </div>
-
       <table role="table" className="examPageTable">
         <thead className="tableHeaderRoot" >
           <tr className="headerRow">
